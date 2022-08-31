@@ -1,0 +1,112 @@
+.features
+    width: 100%
+
+    &__image
+        width: 100%
+        box-shadow: 0 20px $gray
+
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 50px
+        background: $gray
+
+    &__title
+        font-weight: 700
+        font-size: 60px
+        line-height: 82px
+        color: #283C43
+
+    &__navigation
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 40px
+        background: $gray
+        width: 100%
+        z-index: 1
+        position: sticky
+        top: 0
+
+        &-rectangle
+            width: 1640px
+            height: 1px
+            background: #C2D1D7
+
+        &-list
+            display: flex
+            gap: 69px
+            list-style: none
+
+            &-item
+                font-weight: 400
+                font-size: 17px
+                line-height: 32px
+                color: $black
+                text-decoration: none
+
+                &.active
+                    color: #0099CC
+                    text-decoration: underline
+                    text-underline-offset: -62px
+                    text-decoration-thickness: 3px
+
+                &:hover
+                    color: #0099CC
+                    text-decoration: underline
+                    text-underline-offset: -62px
+                    text-decoration-thickness: 3px
+
+    &__feature
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 40px
+        padding-top: 100px
+        padding-bottom: 100px
+        width: 100%
+
+        &-contents
+            display: flex
+            flex-direction: column
+            gap: 40px
+
+            &--reverse
+                align-items: flex-end
+
+        &--white
+            background: $white
+
+        &-title
+            font-weight: 700
+            font-size: 40px
+            line-height: 54px
+            color: $black
+
+        &-container
+            display: flex
+            gap: 158px
+
+            &--reverse
+                flex-direction: row-reverse
+
+            &-list
+                display: flex
+                flex-direction: column
+                justify-content: center
+                gap: 30px
+
+                &-item
+                    display: flex
+                    align-items: center
+                    gap: 20px
+
+            &-image
+                filter: drop-shadow(0px 64px 64px rgba(189, 205, 214, 0.28))
+
+
+
+
+
