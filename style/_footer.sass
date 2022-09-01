@@ -1,0 +1,48 @@
+.footer
+    width: 100%
+    background: #1A292E
+    padding: 60px 0px
+
+    &__data
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 49.479166666666664vw
+
+        &-copyrithing
+            font-weight: 400
+            font-size: 16px
+            line-height: 22px
+            color: $white
+            opacity: 0.4
+
+        &-socials
+            display: flex
+            gap: 6px
+
+            &-item
+                display: flex
+                align-items: center
+                justify-content: center
+                color: $white
+                width: 50px
+                height: 50px
+                background: #304248
+                font-size: 30px
+                border-radius: 50%
+                text-decoration: none
+
+                &--instagram
+                    border-radius: 12px
+
+                &:hover
+                    background: $blue
+                    transition: all 0.3 ease-in-out
+
+@media (max-width: 650px)
+    .footer
+        &__data
+            flex-direction: column-reverse
+            gap: 33px
+            &-copyrithing
+                text-align: center
