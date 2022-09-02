@@ -14,13 +14,14 @@
     <script src="https://kit.fontawesome.com/c3b80f3861.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <header class="header">
         <nav class="navigation">
             <div class="navigation__container">
-                <div class="navigation__logo">
+                <div class="navigation__logo" data-aos="fade-right" data-aos-duration="500">
                     <a href="index.html" class="navigation__logo-link">
                         <img src="img/logo.png" alt="Logo of Tradedoubter" class="navigation__logo-image">
                     </a>
@@ -30,7 +31,7 @@
                     <i class="fa-solid fa-bars"></i>
                 </button>
 
-                <ul class="navigation__list" id="navUL">
+                <ul class="navigation__list" id="navUL" data-aos="fade-left" data-aos-duration="700">
                     <li><a class="navigation__list-item" id="feature" href="#">Features</a></li>
                     <li><a class="navigation__list-item" id="aboutus" href="#">About Us</a></li>
                     <li><a class="navigation__list-item" id="references" href="#">References</a></li>
@@ -40,33 +41,33 @@
                 </ul>
             </div>
 
-            <div class="navigation__rectangle"></div>
+            <div class="navigation__rectangle" data-aos="zoom-in" data-aos-duration="700"></div>
         </nav>
 
         <div class="welcome">
             <div class="welcome__title">
                 <div class="welcome__title-text">
-                    <div class="welcome__title-text-small">Tradedoubler PVN</div>
-                    <div class="welcome__title-text-big">The Private Network for your perfect partner management.</div>
-                    <div class="welcome__title-text-button">View Features</div>
+                    <div class="welcome__title-text-small" data-aos="zoom-in" data-aos-duration="500">Tradedoubler PVN</div>
+                    <div class="welcome__title-text-big" data-aos="zoom-in" data-aos-duration="600">The Private Network for your perfect partner management.</div>
+                    <div class="welcome__title-text-button" id="feature0" data-aos="fade-up" data-aos-duration="700">View Features</div>
                 </div>
-                <img class="welcome__title-image" src="img/laptop.png" alt="laptop">
+                <img class="welcome__title-image" src="img/laptop.png" alt="laptop" data-aos="fade-left" data-aos-duration="700">
             </div>
 
             <div class="welcome__program">
-                <div class="welcome__program-square"></div>
-                <img class="welcome__program-image" src="img/Dashboard(1) 2.png" alt="Dashboard">
-                <div class="welcome__program-square welcome__program-square--big"></div>
+                <div class="welcome__program-square" data-aos="fade-right" data-aos-duration="500"></div>
+                <img class="welcome__program-image" src="img/Dashboard(1) 2.png" alt="Dashboard" data-aos="zoom-in" data-aos-duration="700">
+                <div class="welcome__program-square welcome__program-square--big" data-aos="fade-left" data-aos-duration="500"></div>
             </div>
 
             <img class="welcome__image" src="img/WAVE-white.png" alt="WAVE-white">
 
             <div class="welcome__whatWeDo">
-                <div class="welcome__whatWeDo-big-text">
+                <div class="welcome__whatWeDo-big-text" data-aos="zoom-in-up" data-aos-duration="500">
                     We make affiliate marketing
                     simpler than ever!
                 </div>
-                <div class="welcome__whatWeDo-small-text">
+                <div class="welcome__whatWeDo-small-text" data-aos="zoom-in-up" data-aos-duration="700">
                     With Tradedoubler PVN, every company will have the ability to manage their advertiser's
                     individual affiliate programs as well as their own network of publishers.
                 </div>
@@ -75,20 +76,20 @@
     </header>
 
     <main class="main">
-        <section class="features" id="Tofeature">
+        <section class="features" id="Tofeature" data-aos="fade-up" data-aos-duration="500">
             <img class="features__image" src="img/WAVE-gray.png" alt="WAVE-gray">
             <div class="features__container">
-                <h1 class="features__title">Features of Tradedoubler PVN</h1>
+                <h1 class="features__title" data-aos="zoom-in" data-aos-duration="700">Features of Tradedoubler PVN</h1>
 
-                <div class="features__navigation">
+                <div class="features__navigation" data-aos="fade-up" data-aos-duration="700">
                     <div class="features__navigation-rectangle"></div>
                     <ul class="features__navigation-list">
-                        <li><a class="features__navigation-list-item" id="feature1" href="#"> Manage Advertisers</a></li>
-                        <li><a class="features__navigation-list-item" id="feature2" href="#"> Manage Publishers</a></li>
-                        <li><a class="features__navigation-list-item" id="feature3" href="#"> Tracking</a></li>
-                        <li><a class="features__navigation-list-item" id="feature4" href="#"> Reporting</a></li>
-                        <li><a class="features__navigation-list-item" id="feature5" href="#"> Branded Platform</a></li>
-                        <li><a class="features__navigation-list-item" id="feature6" href="#"> Manage Payments</a></li>
+                        <li><a class="features__navigation-list-item active" id="feature1" href="#Tofeature1"> Manage Advertisers</a></li>
+                        <li><a class="features__navigation-list-item" id="feature2" href="#Tofeature2"> Manage Publishers</a></li>
+                        <li><a class="features__navigation-list-item" id="feature3" href="#Tofeature3"> Tracking</a></li>
+                        <li><a class="features__navigation-list-item" id="feature4" href="#Tofeature4"> Reporting</a></li>
+                        <li><a class="features__navigation-list-item" id="feature5" href="#Tofeature5"> Branded Platform</a></li>
+                        <li><a class="features__navigation-list-item" id="feature6" href="#Tofeature6"> Manage Payments</a></li>
                     </ul>
                     <div class="features__navigation-rectangle"></div>
                 </div>
@@ -96,9 +97,9 @@
                 <!-- feature 1 -->
                 <div class="features__feature" id="Tofeature1">
                     <div class="features__feature-contents">
-                        <div class="features__feature-title">Manage Advertisers</div>
+                        <div class="features__feature-title" data-aos="zoom-in" data-aos-duration="700">Manage Advertisers</div>
                         <div class="features__feature-container">
-                            <div class="features__feature-container-list">
+                            <div class="features__feature-container-list" data-aos="fade-right" data-aos-duration="1000">
                                 <div class="features__feature-container-list-item">
                                     <img class="features__feature-container-list-image" src="img/check.png" alt="check">
                                     Create programs for advertisers
@@ -136,7 +137,7 @@
                                     Communication with publishers
                                 </div>
                             </div>
-                            <img class="features__feature-container-image" src="img/Feature_Manage Advertisers.png" alt="Feature_Manage">
+                            <img class="features__feature-container-image" src="img/Feature_Manage Advertisers.png" alt="Feature_Manage" data-aos="fade-left" data-aos-duration="1000">
                         </div>
                     </div>
                 </div>
@@ -144,9 +145,9 @@
                 <!-- feature 2 -->
                 <div class="features__feature features__feature--white" id="Tofeature2">
                     <div class="features__feature-contents features__feature-contents--reverse">
-                        <div class="features__feature-title">Manage Publishers</div>
+                        <div class="features__feature-title" data-aos="zoom-in" data-aos-duration="700">Manage Publishers</div>
                         <div class="features__feature-container features__feature-container--reverse">
-                            <div class="features__feature-container-list">
+                            <div class="features__feature-container-list" data-aos="fade-right" data-aos-duration="1000">
                                 <div class="features__feature-container-list-item">
                                     <img class="features__feature-container-list-image" src="img/check.png" alt="check">
                                     Connect publishers to programs
@@ -176,7 +177,7 @@
                                     Unlimited websites per publisher account
                                 </div>
                             </div>
-                            <img class="features__feature-container-image" src="img/Feature_Manage Publishers.png" alt="Feature_Manage">
+                            <img class="features__feature-container-image" src="img/Feature_Manage Publishers.png" alt="Feature_Manage" data-aos="fade-left" data-aos-duration="1000">
                         </div>
                     </div>
                 </div>
@@ -184,9 +185,9 @@
                 <!-- feature 3 -->
                 <div class="features__feature" id="Tofeature3">
                     <div class="features__feature-contents">
-                        <div class="features__feature-title">Tracking</div>
+                        <div class="features__feature-title" data-aos="zoom-in" data-aos-duration="700">Tracking</div>
                         <div class="features__feature-container">
-                            <div class="features__feature-container-list">
+                            <div class="features__feature-container-list" data-aos="fade-right" data-aos-duration="1000">
                                 <div class="features__feature-container-list-item">
                                     <img class="features__feature-container-list-image" src="img/check.png" alt="check">
                                     Tracking solution for all marketing activities
@@ -208,7 +209,7 @@
                                     Branded Tracking
                                 </div>
                             </div>
-                            <img class="features__feature-container-image" src="img/Features_Manage Payments.png" alt="Feature_Manage">
+                            <img class="features__feature-container-image" src="img/Features_Manage Payments.png" alt="Feature_Manage" data-aos="fade-left" data-aos-duration="1000">
                         </div>
                     </div>
                 </div>
@@ -216,9 +217,9 @@
                 <!-- feature 4 -->
                 <div class="features__feature features__feature--white" id="Tofeature4">
                     <div class="features__feature-contents features__feature-contents--reverse">
-                        <div class="features__feature-title">Reporting</div>
+                        <div class="features__feature-title" data-aos="zoom-in" data-aos-duration="700">Reporting</div>
                         <div class="features__feature-container features__feature-container--reverse">
-                            <div class="features__feature-container-list">
+                            <div class="features__feature-container-list" data-aos="fade-right" data-aos-duration="1000">
                                 <div class="features__feature-container-list-item">
                                     <img class="features__feature-container-list-image" src="img/check.png" alt="check">
                                     Reports to manage and track activity through your network
@@ -244,7 +245,7 @@
                                     Bookmark your favorite reports
                                 </div>
                             </div>
-                            <img class="features__feature-container-image" src="img/Feature_Reporting.png" alt="Feature_Manage">
+                            <img class="features__feature-container-image" src="img/Feature_Reporting.png" alt="Feature_Manage" data-aos="fade-left" data-aos-duration="1000">
                         </div>
                     </div>
                 </div>
@@ -252,9 +253,9 @@
                 <!-- feature 5 -->
                 <div class="features__feature" id="Tofeature5">
                     <div class="features__feature-contents">
-                        <div class="features__feature-title">Branded Platform</div>
+                        <div class="features__feature-title" data-aos="zoom-in" data-aos-duration="700">Branded Platform</div>
                         <div class="features__feature-container">
-                            <div class="features__feature-container-list">
+                            <div class="features__feature-container-list" data-aos="fade-right" data-aos-duration="1000">
                                 <div class="features__feature-container-list-item">
                                     <img class="features__feature-container-list-image" src="img/check.png" alt="check">
                                     Brand your platform with your Corporate Identity
@@ -272,7 +273,7 @@
                                     Branded Tracking
                                 </div>
                             </div>
-                            <img class="features__feature-container-image" src="img/Feature_Branded Platform.png" alt="Feature_Manage">
+                            <img class="features__feature-container-image" src="img/Feature_Branded Platform.png" alt="Feature_Manage" data-aos="fade-left" data-aos-duration="1000">
                         </div>
                     </div>
                 </div>
@@ -280,9 +281,9 @@
                  <!-- feature 6 -->
                  <div class="features__feature features__feature--white" id="Tofeature6">
                     <div class="features__feature-contents features__feature-contents--reverse">
-                        <div class="features__feature-title">Manage Payments</div>
+                        <div class="features__feature-title" data-aos="zoom-in" data-aos-duration="700">Manage Payments</div>
                         <div class="features__feature-container features__feature-container--reverse">
-                            <div class="features__feature-container-list">
+                            <div class="features__feature-container-list" data-aos="fade-right" data-aos-duration="1000">
                                 <div class="features__feature-container-list-item">
                                     <img class="features__feature-container-list-image" src="img/check.png" alt="check">
                                     Tradedoubler PVN handles payout to publishers
@@ -308,34 +309,34 @@
                                     Payout to all your active markets
                                 </div>
                             </div>
-                            <img class="features__feature-container-image" src="img/Feature_Manage Payments.png" alt="Feature_Manage">
+                            <img class="features__feature-container-image" src="img/Feature_Manage Payments.png" alt="Feature_Manage" data-aos="fade-left" data-aos-duration="1000">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="benefits">
+        <section class="benefits" data-aos="fade-up" data-aos-duration="500">
             <img class="benefits__image" src="img/WAVE-black.png" alt="WAVE-black">
             <div class="benefits__container">
-                <h1 class="benefits__title">Benefits of Tradedoubler PVN</h1>
+                <h1 class="benefits__title" data-aos="zoom-in" data-aos-duration="700">Benefits of Tradedoubler PVN</h1>
 
                 <div class="benefits__slider">
                     <div class="benefits__slider-slide">
                         <div class="benefits__slider-slide-container">
-                            <div class="benefits__slider-slide-item">
+                            <div class="benefits__slider-slide-item" data-aos="fade-up" data-aos-duration="800">
                                 <img class="benefits__slider-slide-item-image" src="img/chart.png" alt="chart">
                                 <p class="benefits__slider-slide-item-text">Improved sales attribution</p>
                             </div>
-                            <div class="benefits__slider-slide-item">
+                            <div class="benefits__slider-slide-item" data-aos="fade-up" data-aos-duration="1300">
                                 <img class="benefits__slider-slide-item-image" src="img/noads.png" alt="no ads">
                                 <p class="benefits__slider-slide-item-text">No advertiseror publisher limit</p>
                             </div>
-                            <div class="benefits__slider-slide-item">
+                            <div class="benefits__slider-slide-item" data-aos="fade-up" data-aos-duration="1800">
                                 <img class="benefits__slider-slide-item-image" src="img/clock.png" alt="clock">
                                 <p class="benefits__slider-slide-item-text">Time saving with all-in-one platform</p>
                             </div>
-                            <div class="benefits__slider-slide-item">
+                            <div class="benefits__slider-slide-item" data-aos="fade-up" data-aos-duration="2300">
                                 <img class="benefits__slider-slide-item-image" src="img/computer.png" alt="computer">
                                 <p class="benefits__slider-slide-item-text">Your own branded platform</p>
                             </div>
@@ -385,7 +386,7 @@
                     </div>
                 </div>
 
-                <div class="benefits__buttons">
+                <div class="benefits__buttons" data-aos="fade-up" data-aos-duration="800">
                     <span class="benefits__buttons-item" onclick="currentSlide(1)"></span>
                     <span class="benefits__buttons-item" onclick="currentSlide(2)"></span>
                     <span class="benefits__buttons-item" onclick="currentSlide(3)"></span>
@@ -394,10 +395,10 @@
         </section>
 
         <section class="clients">
-            <h1 class="clients__title">Clients of Tradedoubler PVN</h1>
+            <h1 class="clients__title" data-aos="zoom-in" data-aos-duration="500">Clients of Tradedoubler PVN</h1>
 
             <div class="clients__client">
-                <div class="clients__client-item">
+                <div class="clients__client-item" data-aos="zoom-in-right" data-aos-duration="2300">
                     <img src="img/agencies.png" alt="agencies">
                     <h1 class="clients__client-item-title">Agencies</h1>
                     <p class="clients__client-item-text">
@@ -409,7 +410,7 @@
                     </p>
                 </div>
 
-                <div class="clients__client-item">
+                <div class="clients__client-item" data-aos="zoom-in" data-aos-duration="2300">
                     <img src="img/advertiser.png" alt="advertiser">
                     <h1 class="clients__client-item-title">Advertiser</h1>
                     <p class="clients__client-item-text">
@@ -420,7 +421,7 @@
                     </p>
                 </div>
 
-                <div class="clients__client-item">
+                <div class="clients__client-item" data-aos="zoom-in-left" data-aos-duration="2300">
                     <img src="img/publishers.png" alt="publishers">
                     <h1 class="clients__client-item-title">Publishers</h1>
                     <p class="clients__client-item-text">
@@ -432,16 +433,16 @@
                 </div>
             </div>
 
-            <div class="clients__button" id="client">What our clients say</div>
+            <div class="clients__button" id="client" data-aos="fade-up" data-aos-duration="800">What our clients say</div>
 
-            <div class="clients__rectangle" id="Toaboutus"></div>
+            <div class="clients__rectangle" id="Toaboutus" data-aos="fade-up" data-aos-duration="800"></div>
         </section>
 
         <section class="about-us">
-            <h1 class="about-us__title">About us</h1>
+            <h1 class="about-us__title" data-aos="zoom-in" data-aos-duration="500">About us</h1>
 
             <div class="about-us__flex">
-                <div class="about-us__flex-text">
+                <div class="about-us__flex-text" data-aos="fade-right" data-aos-duration="1000">
                     <h1 class="about-us__flex-text-big">
                         Tradedoubler PVN
                     </h1>
@@ -461,13 +462,13 @@
                     </p>
                 </div>
 
-                <img class="about-us__flex-image" src="img/abou-us1.png" alt="Bulding">
+                <img class="about-us__flex-image" src="img/abou-us1.png" alt="Bulding" data-aos="fade-left" data-aos-duration="1000">
             </div>
 
             <div class="about-us__flex">
-                <img class="about-us__flex-image about-us__flex-image--nobackground" src="img/abou-us2.png" alt="interior">
+                <img class="about-us__flex-image about-us__flex-image--nobackground" src="img/abou-us2.png" alt="interior" data-aos="fade-right" data-aos-duration="1000">
 
-                <div class="about-us__flex-text">
+                <div class="about-us__flex-text" data-aos="fade-left" data-aos-duration="1000">
                     <h1 class="about-us__flex-text-big">
                         About affiliate marketing
                     </h1>
@@ -489,16 +490,16 @@
             </div>
         </section>
 
-        <section class="references" id="Toreferences">
+        <section class="references" id="Toreferences" data-aos="fade-up" data-aos-duration="500">
             <img class="references__image" src="img/WAVE-gray.png" alt="WAVE-gray">
             <div class="references__container">
-                <div class="references__title">
+                <div class="references__title" data-aos="zoom-in" data-aos-duration="700">
                     <h1 class="references__title-big">References</h1>
                     <p class="references__title-small">What our customers say about Tradedoubler PVN!</p>
                 </div>
 
                 <div class="references__slider">
-                    <div class="references__slider-slide">
+                    <div class="references__slider-slide" data-aos="fade-up" data-aos-duration="1000">
                         <div class="references__slider-slide-container">
                             <div class="references__slider-slide-item">
                                 <div class="references__slider-slide-item-image">
@@ -608,7 +609,7 @@
                     </div>
                 </div>
 
-                <div class="references__buttons">
+                <div class="references__buttons" data-aos="fade-up" data-aos-duration="800">
                     <span class="references__buttons-item" onclick="currentSlide2(1)"></span>
                     <span class="references__buttons-item" onclick="currentSlide2(2)"></span>
                     <span class="references__buttons-item" onclick="currentSlide2(3)"></span>
@@ -617,12 +618,12 @@
         </section>
 
         <section class="contact" id="Tocontact">
-            <div class="contact__title">
+            <div class="contact__title" data-aos="zoom-in" data-aos-duration="700">
                 <h1 class="contact__title-big">We are ready to cooperate!</h1>
                 <p class="contact__title-small">Do you want to work with us?  Write to us now!</p>
             </div>
 
-            <form class="contact__form">
+            <form class="contact__form" data-aos="fade-up" data-aos-duration="1000">
                 <input class="contact__form-item" type="text"placeholder="First Name">
                 <input class="contact__form-item" type="text"placeholder="Last Name">
                 <input class="contact__form-item" type="email" placeholder="Email">
@@ -643,31 +644,31 @@
                     personal information, please refer to <a class="contact__form-item-politics--link" href="#">our privacy policy.</a>
                 </div>
 
-                <button  class="contact__form-item contact__form-item--submit"  type="submit">Submit</button>
+                <button  class="contact__form-item contact__form-item--submit"  type="submit">Send message</button>
             </form>
         </section>
     </main>
 
     <footer class="footer">
         <nav class="navigation">
-            <div class="navigation__container">
-                <div class="navigation__logo">
+            <div class="navigation__container navigation__container--footer">
+                <div class="navigation__logo" data-aos="fade-right" data-aos-duration="500">
                     <a href="index.html" class="navigation__logo-link">
                         <img src="img/logo.png" alt="Logo of Tradedoubter" class="navigation__logo-image">
                     </a>
                 </div>
 
-                <ul class="navigation__list navigation__list--footer">
-                    <li><a class="navigation__list-item" id="feature0" href="#">Features</a></li>
-                    <li><a class="navigation__list-item" id="aboutus1" href="#">About Us</a></li>
-                    <li><a class="navigation__list-item" id="references1" href="#">References</a></li>
-                    <li><a class="navigation__list-item" href="news.html">News</a></li>
-                    <li><a class="navigation__list-item" id="contact1" href="#">Contact</a></li>
-                    <li><a class="navigation__list-item navigation__list-item--tryit" href="#">Give it a try</a></li>
+                <ul class="navigation__list navigation__list--footer" data-aos="fade-left" data-aos-duration="700">
+                    <li><a class="navigation__list-item navigation__list-item--footer" id="feature" href="index.html#Tofeature">Features</a></li>
+                    <li><a class="navigation__list-item navigation__list-item--footer" id="aboutus" href="index.html#Toaboutus">About Us</a></li>
+                    <li><a class="navigation__list-item navigation__list-item--footer" id="references" href="index.html#Toreferences">References</a></li>
+                    <li><a class="navigation__list-item navigation__list-item--footer" href="news.html">News</a></li>
+                    <li><a class="navigation__list-item navigation__list-item--footer" id="contact1" href="#">Contact</a></li>
+                    <li><a class="navigation__list-item navigation__list-item-footer navigation__list-item--tryit" href="#">Give it a try</a></li>
                 </ul>
             </div>
 
-            <div class="navigation__rectangle"></div>
+            <div class="navigation__rectangle" data-aos="zoom-in" data-aos-duration="500"></div>
         </nav>
 
         <div class="footer__data">
@@ -688,6 +689,11 @@
     <script src="js/scrollto.js"></script>
     <script src="js/mobile_menu.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/sticky_menu_features.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
