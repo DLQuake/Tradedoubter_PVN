@@ -63,17 +63,18 @@
         display: flex
         align-items: center
         gap: 22px
+
         &-item
-            width: 8px
-            height: 8px
-            border-radius: 100%
+            width:  12px
+            height: 12px
+            border-radius: 50%
             background: #DDF7FF
-            opacity: 0.3
 
             &:hover
+                width: 12px
+                height: 12px
+                background: $blue
                 cursor: pointer
-                border: 2px solid $blue
-                background: transparent
 
 @media (max-width: 440px)
     .benefits

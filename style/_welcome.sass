@@ -11,6 +11,10 @@
         justify-content: space-between
         gap: 40px
 
+        &--nopadding
+            padding: 0
+            width: 80%
+
         &-text
             display: flex
             flex-direction: column
@@ -36,11 +40,24 @@
                 box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16)
                 border-radius: 6px
 
+                &:hover
+                    background: $gray
+                    color: $black
+                    cursor: pointer
+                    transition: all 0.3s ease-in-out
+
+                &:active
+                    background: $blue
+                    color: $white
+
     &__program
         display: flex
         position: absolute
         z-index: 1
         gap: 139px
+
+        &--gap
+            gap: 1362px
 
         &-image
             filter: drop-shadow(0px 24px 34px rgba(0, 0, 0, 0.11))
@@ -54,6 +71,12 @@
             position: relative
             top: 280px
 
+            &--top
+                top: 80px
+
+            &-minustop
+                top: -80px !important
+
             &--big
                 width: 138px
                 height: 138px
@@ -64,6 +87,11 @@
         height: 400px
         position: absolute
         box-shadow: 0px 300px 0 0px $white
+
+        &--boxshadow
+            position: static
+            height: auto
+            box-shadow: 0px 10px 0 0px $white
 
     &__whatWeDo
         display: flex
@@ -92,7 +120,7 @@
 @media (max-width: 1650px)
     .welcome
         &__program
-            gap: 2vw
+            display: none
 
 @media (max-width: 1460px)
     .welcome
@@ -100,6 +128,10 @@
             flex-direction: column-reverse
             align-items: center
             padding: 0 0 20px 0
+
+            &--nopadding
+                align-items: flex-start
+
             &-image
                 width: 50vw
 
@@ -109,6 +141,9 @@
                     width: 100%
                     font-size: 30px
                     line-height: 41px
+
+                    &--size
+                        font-size: 60px
                 &-button
                     padding: 11px 20px
 
