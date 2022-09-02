@@ -7,19 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tradedoubter PVN</title>
 
+    <link rel="icon" href="img/cudzyslow.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c3b80f3861.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <header class="header">
         <nav class="navigation">
             <div class="navigation__container">
-                <div class="navigation__logo">
+                <div class="navigation__logo" data-aos="fade-right" data-aos-duration="500">
                     <a href="index.html" class="navigation__logo-link">
                         <img src="img/logo.png" alt="Logo of Tradedoubter" class="navigation__logo-image">
                     </a>
@@ -29,50 +31,427 @@
                     <i class="fa-solid fa-bars"></i>
                 </button>
 
-                <ul class="navigation__list" id="navUL">
-                    <li><a class="navigation__list-item" href="#">Features</a></li>
-                    <li><a class="navigation__list-item" href="#">About Us</a></li>
-                    <li><a class="navigation__list-item" href="#">References</a></li>
+                <ul class="navigation__list" id="navUL" data-aos="fade-left" data-aos-duration="700">
+                    <li><a class="navigation__list-item" id="feature" href="#">Features</a></li>
+                    <li><a class="navigation__list-item" id="aboutus" href="#">About Us</a></li>
+                    <li><a class="navigation__list-item" id="references" href="#">References</a></li>
                     <li><a class="navigation__list-item" href="news.html">News</a></li>
-                    <li><a class="navigation__list-item" href="#">Contact</a></li>
+                    <li><a class="navigation__list-item" id="contact" href="#">Contact</a></li>
                     <li><a class="navigation__list-item navigation__list-item--tryit" href="#">Give it a try</a></li>
                 </ul>
             </div>
 
-            <div class="navigation__rectangle"></div>
+            <div class="navigation__rectangle" data-aos="zoom-in" data-aos-duration="700"></div>
         </nav>
 
         <div class="welcome">
-            <div class="welcome__title">
+            <div class="welcome__title welcome__title--nopadding">
                 <div class="welcome__title-text">
-                    <div class="welcome__title-text-small">Tradedoubler PVN</div>
-                    <div class="welcome__title-text-big">News</div>
+                    <div class="welcome__title-text-small" data-aos="zoom-in" data-aos-duration="500">Tradedoubler PVN</div>
+                    <div class="welcome__title-text-big welcome__title-text-big--size" data-aos="zoom-in" data-aos-duration="600">News</div>
                 </div>
             </div>
 
-            <div class="welcome__program">
-                <div class="welcome__program-square"></div>
-                <div class="welcome__program-square welcome__program-square--big"></div>
+            <div class="welcome__program welcome__program--gap">
+                <div class="welcome__program-square welcome__program-square--top" data-aos="fade-right" data-aos-duration="500"></div>
+                <div class="welcome__program-square welcome__program-square-minustop welcome__program-square--big" data-aos="fade-left" data-aos-duration="500"></div>
             </div>
 
-            <img class="welcome__image" src="img/WAVE-white.png" alt="Dashboard">
-
+            <img class="welcome__image welcome__image--boxshadow" src="img/WAVE-white.png" alt="WAVE-white">
         </div>
     </header>
-
+    
     <main class="main">
-        <section class="news"></section>
-        <section class="contact"></section>
+        <section class="news">
+            <div class="news__pages">
+                <div class="news__pages-page">
+                    <div class="news__pages-page-container">
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news1.png" alt="News 1">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    Good to know for Back-to-School season
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    The Back-to-School season is a fantastic opportunity
+                                    to create a successful affiliate marketing campaign.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news2.png" alt="News 2">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    Affiliate marketing with a partner management.
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    Do you want to manage your affiliate marketing on
+                                    your own with the technology of a leading affiliate
+                                    network?
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news3.png" alt="News 3">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    Successful social media campaign during the summer sales
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    The Back-to-School season is a fantastic opportunity
+                                    to create a successful affiliate marketing campaign.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news4.png" alt="News 4">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    The impact of Russia war against Ukraine on eCommerce
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    The strong sales growth in eCommerce has slowed
+                                    down significantly since the earth-shattering war.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news5.png" alt="News 5">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    The most effective affiliate program - empik
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    Mobile App Marketing covers a complete life cycle of a
+                                    user. It is designed to attract new users, improve
+                                    retention, and lower the churn rate.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news6.png" alt="News 6">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    TikTok continues to be the top-performing app
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    Did you know that Tradedoubler are one of the first
+                                    certified partners of TikTok? Take your chance now
+                                    and generate great reach for your brand.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news1.png" alt="News 1">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    Good to know for Back-to-School season
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    The Back-to-School season is a fantastic opportunity
+                                    to create a successful affiliate marketing campaign.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news2.png" alt="News 2">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    Affiliate marketing with a partner management.
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    Do you want to manage your affiliate marketing on
+                                    your own with the technology of a leading affiliate
+                                    network?
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news3.png" alt="News 3">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    Successful social media campaign during the summer sales
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    The Back-to-School season is a fantastic opportunity
+                                    to create a successful affiliate marketing campaign.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news__pages-page">
+                    <div class="news__pages-page-container">
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news2.png" alt="News 2">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    Affiliate marketing with a partner management.
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    Do you want to manage your affiliate marketing on
+                                    your own with the technology of a leading affiliate
+                                    network?
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news1.png" alt="News 1">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    Good to know for Back-to-School season
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    The Back-to-School season is a fantastic opportunity
+                                    to create a successful affiliate marketing campaign.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news3.png" alt="News 3">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    Successful social media campaign during the summer sales
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    The Back-to-School season is a fantastic opportunity
+                                    to create a successful affiliate marketing campaign.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news6.png" alt="News 6">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    TikTok continues to be the top-performing app
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    Did you know that Tradedoubler are one of the first
+                                    certified partners of TikTok? Take your chance now
+                                    and generate great reach for your brand.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news4.png" alt="News 4">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    The impact of Russia war against Ukraine on eCommerce
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    The strong sales growth in eCommerce has slowed
+                                    down significantly since the earth-shattering war.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news5.png" alt="News 5">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    The most effective affiliate program - empik
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    Mobile App Marketing covers a complete life cycle of a
+                                    user. It is designed to attract new users, improve
+                                    retention, and lower the churn rate.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news2.png" alt="News 2">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    Affiliate marketing with a partner management.
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    Do you want to manage your affiliate marketing on
+                                    your own with the technology of a leading affiliate
+                                    network?
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news1.png" alt="News 1">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    Good to know for Back-to-School season
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    The Back-to-School season is a fantastic opportunity
+                                    to create a successful affiliate marketing campaign.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__pages-page-item" data-aos="fade-up" data-aos-duration="900">
+                            <img class="news__pages-page-item-image" src="img/news3.png" alt="News 3">
+                            <div class="news__pages-page-item-text">
+                                <h1 class="news__pages-page-item-text-big">
+                                    Successful social media campaign during the summer sales
+                                </h1>
+                                <p class="news__pages-page-item-text-small">
+                                    The Back-to-School season is a fantastic opportunity
+                                    to create a successful affiliate marketing campaign.
+                                </p>
+                                <div class="news__pages-page-item-text-more">
+                                    <p class="news__pages-page-item-text-more-date">August 17,2022</p>
+                                    <a href="#" class="news__pages-page-item-text-more-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news__buttons" data-aos="fade-up" data-aos-duration="800">
+                <a class="news__buttons-item" onclick="plusPages(-1)">Previous page</a>
+                <a class="news__buttons-item news__buttons-item--blue" onclick="plusPages(1)">Next page</a>
+            </div>
+        </section>
+
+        <section class="contact" id="Tocontact">
+            <div class="contact__title" data-aos="zoom-in" data-aos-duration="700">
+                <h1 class="contact__title-big">We are ready to cooperate!</h1>
+                <p class="contact__title-small">Do you want to work with us?  Write to us now!</p>
+            </div>
+
+            <form class="contact__form" data-aos="fade-up" data-aos-duration="1000">
+                <input class="contact__form-item" type="text"placeholder="First Name">
+                <input class="contact__form-item" type="text"placeholder="Last Name">
+                <input class="contact__form-item" type="email" placeholder="Email">
+                <input class="contact__form-item" type="text"placeholder="Company name">
+                <select class="contact__form-item-select" name="markatplaces">
+                    <option class="contact__form-item-select--option" value="primary_marketplace" disabled selected>Country</option>
+                    <option class="contact__form-item-select--option" value="value2">England</option>
+                    <option class="contact__form-item-select--option" value="value3">Germany</option>
+                    <option class="contact__form-item-select--option" value="value1">Poland</option>
+                    <option class="contact__form-item-select--option" value="value4">United States of America</option>
+                </select>
+                <input class="contact__form-item" type="tel" placeholder="Phone number">
+                <textarea class="contact__form-item contact__form-item--textarea" placeholder="Message" cols="10" rows="10"></textarea>
+
+                <div class="contact__form-item-politics">
+                    Tradedoubler AB will only process the information that you have provided us with in order
+                    to handle your request. For more information about how Tradedoubler processes
+                    personal information, please refer to <a class="contact__form-item-politics--link" href="#">our privacy policy.</a>
+                </div>
+
+                <button  class="contact__form-item contact__form-item--submit"  type="submit">Send message</button>
+            </form>
+        </section>
     </main>
 
     <footer class="footer">
+        <nav class="navigation">
+            <div class="navigation__container navigation__container--footer">
+                <div class="navigation__logo" data-aos="fade-right" data-aos-duration="500">
+                    <a href="index.html" class="navigation__logo-link">
+                        <img src="img/logo.png" alt="Logo of Tradedoubter" class="navigation__logo-image">
+                    </a>
+                </div>
 
+                <ul class="navigation__list navigation__list--footer" data-aos="fade-left" data-aos-duration="700">
+                    <li><a class="navigation__list-item navigation__list-item--footer" id="feature" href="index.html#Tofeature">Features</a></li>
+                    <li><a class="navigation__list-item navigation__list-item--footer" id="aboutus" href="index.html#Toaboutus">About Us</a></li>
+                    <li><a class="navigation__list-item navigation__list-item--footer" id="references" href="index.html#Toreferences">References</a></li>
+                    <li><a class="navigation__list-item navigation__list-item--footer" href="news.html">News</a></li>
+                    <li><a class="navigation__list-item navigation__list-item--footer" id="contact1" href="#">Contact</a></li>
+                    <li><a class="navigation__list-item navigation__list-item-footer navigation__list-item--tryit" href="#">Give it a try</a></li>
+                </ul>
+            </div>
+
+            <div class="navigation__rectangle" data-aos="zoom-in" data-aos-duration="500"></div>
+        </nav>
+
+        <div class="footer__data">
+            <div class="footer__data-copyrithing">
+                &copy; 2018, Tradedoubler | Wszystkie prawa zastrzeżone.
+            </div>
+            <div class="footer__data-socials">
+                <a class="footer__data-socials-item" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="footer__data-socials-item" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="footer__data-socials-item" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a class="footer__data-socials-item footer__data-socials-item--instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/scrollto.js"></script>
     <script src="js/mobile_menu.js"></script>
+    <script src="js/pages.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
