@@ -1,3 +1,4 @@
+// benefits
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -21,7 +22,7 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-
+// references
 let slideIndex2 = 1;
 showSlides2(slideIndex2);
 
