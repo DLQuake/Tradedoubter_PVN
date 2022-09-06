@@ -199,7 +199,7 @@
   display: flex;
   position: absolute;
   z-index: 1;
-  gap: 139px;
+  gap: 7.2395833333vw;
 }
 .welcome__program--gap {
   gap: 1362px;
@@ -264,7 +264,7 @@
 }
 
 @media (max-width: 1650px) {
-  .welcome__program {
+  .welcome__program-square {
     display: none;
   }
 }
@@ -502,16 +502,11 @@
   text-align: center;
   color: #ffffff;
 }
+.benefits__slider {
+  width: 100%;
+}
 .benefits__slider-slide {
-  display: none;
-}
-.benefits__slider-slide-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-.benefits__slider-slide-item {
+  width: 235px !important;
   border: 1px solid #374F57;
   border-radius: 6px;
   display: flex;
@@ -521,38 +516,31 @@
   padding: 49px 130px 37px 40px;
   transition: all 0.3s ease-in-out !important;
 }
-.benefits__slider-slide-item:hover {
+.benefits__slider-slide:hover {
   cursor: pointer;
   background: #31464E;
-  transform: scale(1.1) !important;
 }
-.benefits__slider-slide-item-image {
+.benefits__slider-slide-image {
   width: 35px;
   height: 35px;
 }
-.benefits__slider-slide-item-text {
+.benefits__slider-slide-text {
   width: 220px;
   font-weight: 600;
   font-size: 23px;
   line-height: 30px;
   color: #ffffff;
 }
-.benefits__buttons {
-  display: flex;
-  align-items: center;
-  gap: 22px;
+.benefits__slider-pagination {
+  position: relative !important;
+  bottom: 0;
+  margin-top: 48px;
 }
-.benefits__buttons-item {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #DDF7FF;
-}
-.benefits__buttons-item:hover {
-  width: 12px;
-  height: 12px;
-  background: #0099CC;
-  cursor: pointer;
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 10px !important;
 }
 
 @media (max-width: 440px) {
@@ -560,11 +548,17 @@
     font-size: 10vw;
     line-height: 41px;
   }
-  .benefits__slider-slide-item {
-    width: 30vw;
+  .benefits__container {
+    padding: 100px 10px;
   }
-  .benefits__slider-slide-item-text {
+  .benefits__slider-slide {
+    width: 10px !important;
+    height: 250px !important;
+  }
+  .benefits__slider-slide-text {
     width: 100%;
+    font-size: 4vw;
+    line-height: 5vw;
   }
 }
 .clients {
@@ -772,16 +766,12 @@
   font-size: 20px;
   line-height: 35px;
 }
+.references__slider {
+  width: 100%;
+}
 .references__slider-slide {
-  display: none;
-}
-.references__slider-slide-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-.references__slider-slide-item {
+  width: 720px !important;
+  height: 550px !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -790,28 +780,28 @@
   transition: all 0.3s ease-in-out;
   background: #ffffff;
 }
-.references__slider-slide-item:hover {
-  transform: scale(1.05);
+.references__slider-slide:hover {
+  background: #c9c7c7;
 }
-.references__slider-slide-item-image {
+.references__slider-slide-image {
   display: flex;
   justify-content: space-between;
   height: 120px;
 }
-.references__slider-slide-item-image-one {
+.references__slider-slide-image-one {
   width: 158.01px;
   height: 56.44px;
 }
-.references__slider-slide-item-image-one--size {
+.references__slider-slide-image-one--size {
   height: 120px;
 }
-.references__slider-slide-item-image-two {
+.references__slider-slide-image-two {
   width: 73.53px;
   height: 60px;
   position: relative;
   top: -90px;
 }
-.references__slider-slide-item-text {
+.references__slider-slide-text {
   width: 677px;
   font-style: italic;
   font-weight: 600;
@@ -819,30 +809,27 @@
   line-height: 31px;
   color: #283C43;
 }
-.references__buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 22px;
+.references__slider-pagination {
+  position: relative !important;
+  bottom: 0;
+  margin-top: 48px;
 }
-.references__buttons-item {
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  background: #BABABA;
-}
-.references__buttons-item:hover {
-  width: 12px;
-  height: 12px;
-  background: #0099CC;
-  cursor: pointer;
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 10px !important;
 }
 
 @media (max-width: 810px) {
-  .references__slider-slide-item {
-    width: 60vw;
+  .references__container {
+    padding: 100px 0;
   }
-  .references__slider-slide-item-text {
+  .references__slider-slide {
+    width: 60vw !important;
+    height: 1450px !important;
+  }
+  .references__slider-slide-text {
     width: 100%;
   }
 }

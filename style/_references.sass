@@ -29,80 +29,68 @@
             line-height: 35px
 
     &__slider
+        width: 100%
         &-slide
-            display: none
-
-            &-container
-                display: flex
-                justify-content: center
-                flex-wrap: wrap
-                gap: 40px
-
-            &-item
-                display: flex
-                flex-direction: column
-                justify-content: center
-                gap: 84px
-                padding: 67px 62px
-                transition: all 0.3s ease-in-out
-                background: $white
-
-                &:hover
-                    transform: scale(1.05)
-
-                &-image
-                    display: flex
-                    justify-content: space-between
-                    height: 120px
-
-                    &-one
-                        width: 158.01px
-                        height: 56.44px
-
-                        &--size
-                            height: 120px
-
-                    &-two
-                        width: 73.53px
-                        height: 60px
-                        position: relative
-                        top: -90px
-
-                &-text
-                    width: 677px
-                    font-style: italic
-                    font-weight: 600
-                    font-size: 20px
-                    line-height: 31px
-                    color: $black
-
-    &__buttons
-        display: flex
-        align-items: center
-        justify-content: center
-        gap: 22px
-
-        &-item
-            width:  12px
-            height: 12px
-            border-radius: 100%
-            background: #BABABA
+            width: 720px !important
+            height: 550px !important
+            display: flex
+            flex-direction: column
+            justify-content: center
+            gap: 84px
+            padding: 67px 62px
+            transition: all 0.3s ease-in-out
+            background: #ffffff
 
             &:hover
-                width: 12px
-                height: 12px
-                background: $blue
-                cursor: pointer
+                background: #c9c7c7
+
+            &-image
+                display: flex
+                justify-content: space-between
+                height: 120px
+
+                &-one
+                    width: 158.01px
+                    height: 56.44px
+
+                    &--size
+                        height: 120px
+
+                &-two
+                    width: 73.53px
+                    height: 60px
+                    position: relative
+                    top: -90px
+
+            &-text
+                width: 677px
+                font-style: italic
+                font-weight: 600
+                font-size: 20px
+                line-height: 31px
+                color: $black
+
+        &-pagination
+            position: relative !important
+            bottom: 0
+            margin-top: 48px
+
+.swiper-pagination-bullet
+    width: 12px !important
+    height: 12px !important
+    margin: 10px !important
 
 @media (max-width: 810px)
     .references
+        &__container
+            padding: 100px 0
         &__slider
             &-slide
-                &-item
-                    width: 60vw
+                width: 60vw !important
+                height: 1450px !important
 
-                    &-text
-                        width: 100%
+                &-text
+                    width: 100%
 
 @media (max-width: 350px)
     .references
